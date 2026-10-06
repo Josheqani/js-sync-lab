@@ -17,8 +17,8 @@ function parseTokens(text: string) {
     [/^(const|let|var|function|return|while|if|else|async|await|new|class|for)\b/, 'keyword'],
     [/^(console\.log|setTimeout|Promise\.resolve|Date\.now|fetch|queueMicrotask|bakePizza|prepareDough|resolve)\b/, 'function'],
     [/^\b(\d+)\b/, 'number'],
-    [/^(=>|===|==|<=|>=|<|>|\+|\-|\*|\/|=)/, 'operator'],
-    [/^([(){}\[\];,.:])/, 'punctuation'],
+    [/^(=>|===|==|<=|>=|<|>|\+|-|\*|\/|=)/, 'operator'],
+    [/^([(){}[\];,.:])/, 'punctuation'],
     [/^([a-zA-Z_$][a-zA-Z0-9_$]*)/, 'variable'],
     [/^(\s+)/, 'plain'],
   ];
